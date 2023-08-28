@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Carousel */
+#carouselWithPreview amp-img {
+  border-radius: 12px;
+}
+
+#carouselWithPreview figure {
+  height: fit-content;
+  margin: 0;
+}
+
+#carouselWithPreview figure .description {
+  display: flex;
+  align-items: center;
+}
+
+#carouselWithPreview figure .description figcaption {
+  margin-left: 10px;
+}
+
+/* Carousel to left/ to right button */
+#carouselWithPreview .amp-carousel-button {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background-color: rgba(47, 49, 52, 0.50);
+  backdrop-filter: blur(15px);
+}
+
+#carouselWithPreview .amp-carousel-button:focus {
+  outline: none;
+  border: none;
+}
+
+/* Carousel preview */
+#carouselWithPreviewSelector {
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  align-self: center;
+}
+
+/* Carousel selected item */
+#carouselWithPreviewSelector [option][selected] {
+  border: red 2px solid;
+  outline: none;
+}
+
+/* Carousel items */
+#carouselWithPreviewSelector amp-img {
+  border-radius: 6px;
+  border: lightgrey 2px solid;
+  margin-left: 8px;
+  margin-right: 8px;
+}
