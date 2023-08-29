@@ -47,21 +47,29 @@ body {
 /* Carousel preview */
 #carouselWithPreviewSelector {
   width: 100%;
-  overflow-x: scroll;
+  overflow: hidden;
   white-space: nowrap;
   align-self: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+#carouselWithPreviewSelector.active {
+  background: rgba(255, 255, 255, 0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
 }
 
 /* Carousel selected item */
 #carouselWithPreviewSelector [option][selected] {
-  border: red 2px solid;
+  border: red 3px solid;
   outline: none;
 }
 
 /* Carousel items */
 #carouselWithPreviewSelector amp-img {
   border-radius: 6px;
-  border: lightgrey 2px solid;
+  border: lightgrey 3px solid;
   margin-left: 8px;
   margin-right: 8px;
 }
